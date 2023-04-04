@@ -23,7 +23,7 @@ const itemObserver = new IntersectionObserver((entries) => {
             entry.target.classList.remove("slide-in");
         }
     });
-}, { threshold: 1 });
+});
 
 boxes.forEach(box => {
     boxObserver.observe(box);
